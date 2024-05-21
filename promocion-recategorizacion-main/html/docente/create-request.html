@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../css/create-request.css">
+  <title>Crear solicitud</title>
+</head>
+<body>
+  <header>
+    <div>
+      <a href="../../html/docente/dashboard.html">Crear solicitud</a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="../../html/docente/dashboard.html">Regresar</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="form-container">
+      <form action="">
+        <div class="container">
+          <div class="input-field">
+            <label for="name-request">Nombre de la solicitud</label>
+            <input  required type="text" name="name-request" id="name-request">
+          </div>
+          <div class="input-field">
+            <label for="name-request">Tipo de solicitud</label>
+            <select required name="request-type" id="request-type">
+              <option value="promotion">Promocion</option>
+              <option value="recatorize">Recategorizacion</option>
+            </select>
+          </div>
+          <div class="input-field">
+            <label for="asunto">Asunto de solicitud</label>
+            <input required name="asunto" id="asunto" type="text">
+          </div>
+          <div class="input-field">
+            <label for="asunto">Descipcion solicitud</label>
+            <textarea required name="descipcion-solicitud" id="descipcion-solicitud"></textarea>
+          </div>
+        </div>
+        <div>
+          <div class="input-field">
+            <label for="asunto">Experiencia, publicaciones, logros</label>
+            <textarea required name="descipcion-solicitud" id="descipcion-solicitud"></textarea>
+          </div>
+          <div class="input-field">
+            <label for="asunto">Cargar docuemntos referentes</label>
+            <input type="file" required id="file-req" name="file-req">
+          </div>
+        </div>
+        <div class="btn-container">
+          <button type="submit">Crear solicitud</button>
+          <button class="button-red" id="cancelar" type="button">Cancelar</button>
+        </div>
+      </form>
+    </div>
+  </main>
+  <script type="module" src="../../javascript/create-request.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  
+</body>
+</html>

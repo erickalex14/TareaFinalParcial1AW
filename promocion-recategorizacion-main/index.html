@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/login-screen.css" />
+    <title>
+      Solicitud y validación de documentos para promociones y recategorizaciones
+      para docentes ULEAM
+    </title>
+  </head>
+  <body>
+    <main>
+      <div>
+        <img src="./public/LOGO-ULEAM-HORIZONTAL.png" alt="">
+      </div>
+      <h2 class="title">Iniciar Sesion</h2>
+      <div>
+        <form action="">
+          <div class="input-field">
+            <label for="">Correo Electronico</label>
+            <input type="email" placeholder="Correo electronico" required name="email" id="email"/>
+          </div>
+          <div>
+            <div class="input-field">
+              <label for="">Contrasena</label>
+              <input type="password" required name="password" id="password" placeholder="Contraseña"/>
+            </div>
+          </div>
+          <div class="btn-container">
+            <button type="submit">Iniciar Sesion</button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <script src="./javascript/login.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  </body>
+</html>

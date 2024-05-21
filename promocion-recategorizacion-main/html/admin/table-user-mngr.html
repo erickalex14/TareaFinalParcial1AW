@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabla de usuarios</title>
+    <link rel="stylesheet" href="/css/table-user-mngr.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <a href="../../html/admin/table-user-mngr.html">Lista de usuarios</a>
+      </div>
+      <nav>
+        <ul>
+          <li>Usuario Administrador</li>
+          <li><a href="../../index.html">Cerrar Sesion</a></li>
+          <li><button id="crearusuario">Crear usuario</button></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2>Lista de usuarios</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>ID usuario</th>
+            <th>Nombres</th>
+            <th>Apellidos</th>
+            <th>Tipo de usuario</th>
+            <th>Correo institucional</th>
+            <th>Correo personal</th>
+            <th>Fecha creacion(DD-MM-AAAA)</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Prueba</td>
+            <td>Prueba</td>
+            <td>Docente</td>
+            <td>test@live.uleam.edu.ec</td>
+            <td>test@test.com</td>
+            <td>15-05-2023</td>
+            <td>
+              <button id="editar">Editar</button>
+              <button class="button-red" id="eliminar">Eliminar</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+    <script type="module" src="../../javascript/table-user-mngr.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+  </body>
+</html>

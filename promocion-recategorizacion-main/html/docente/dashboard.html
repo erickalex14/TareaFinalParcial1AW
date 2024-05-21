@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel de control Docente</title>
+  <link rel="stylesheet" href="../../css/dashboard-docente.css">
+</head>
+<body>
+  <header>
+    <div>
+      <a href="../../html/docente/dashboard.html">Panel de control</a>
+    </div>
+    <nav>
+      <ul>
+        <li id="notificaciones">Notificaciones</li>
+        <li><a href="../../html/docente/history-requests.html">Historial de solicitudes</a></li>
+        <li><a href="../../html/docente/calendar.html">Calendario</a></li>
+        <li><a href="../../index.html">Cerrar sesion</a></li>
+        <li><button onclick="crearSolicitud()"  id="crearsolicitud">Crear solicitud</button></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="profile-container">
+      <div class="info-docente">
+        <div class="img-container">
+          <img src="../../public/user.png" alt="profile">
+        </div>
+        <div class="info">
+          <div class="info-field">
+            <p><strong>Nombre:</strong> Usuari_prueba</p>
+            <p><strong>Apelldos:</strong> Prueba</p>
+            <p><strong>Correo instit.:</strong> p1234567890@live.uleam.edu.ec</p>
+            <p><strong>Correo Personal:</strong> test@test.com</p>
+            <p><strong>Celular:</strong> 0912548563</p>
+          </div>
+        </div>
+      </div>
+      <div class="data-docente">
+        <div class="card">
+          <h2>Presentacion</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ex illum velit illo delectus, atque suscipit porro ullam magnam cum harum eum ea laudantium cumque deserunt enim officiis explicabo ipsum.</p>
+        </div>
+        <div class="card">
+          <h2>Profesiones</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ex illum velit illo delectus, atque suscipit porro ullam magnam cum harum eum ea laudantium cumque deserunt enim officiis explicabo ipsum.</p>
+        </div>
+      </div>
+    </div>
+    <div class="request-list-container">
+      <h2>Solicitudes recientes</h2>
+      <div class="list-container">
+        <div class="list-card">
+          <strong>Solicitud 1</strong>
+          <p>Descipcion solicitud</p>
+          <p>Fecha: 12-05-2023</p>
+          <p><span class="cuadro">Estado: Enviado</span></p>
+        </div>
+        <div class="list-card">
+          <strong>Solicitud 2</strong>
+          <p>Descipcion solicitud</p>
+          <p>Fecha: 12-05-2023</p>
+          <p><span class="cuadro">Estado: Enviado</span></p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script type="module" src="../../javascript/dashboard-docente.js">
+  </script>
+  <script>
+    function crearSolicitud() {
+      window.location.href = "./create-request.html";
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+</body>
+</html>

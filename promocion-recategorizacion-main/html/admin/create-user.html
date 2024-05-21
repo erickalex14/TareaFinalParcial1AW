@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crear usuario</title>
+  <link rel="stylesheet" href="../../css/create-user.css">
+</head>
+<body>
+  <main>
+    <form>
+      <div class="top">
+        <div>
+          <h2>Creacion de usuario</h2>
+        </div>
+        <div class="btn-container">
+          <button class="button-green" type="submit">Crear usuario</button>
+          <button class="button-red" type="button" id="cancelbtn">Cancelar y volver</button>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="left">
+          <div class="input-field">
+            <label for="">Nombres</label>
+            <input type="text" name="names" id="names" required>
+          </div>
+          <div class="input-field">
+            <label for="">Apellidos</label>
+            <input type="text" name="lastnames" id="lastnames" required>
+          </div>
+          <div class="input-field">
+            <label for="">Cedula</label>
+            <input type="text" required name="cedula" id="cedula">
+          </div>
+          <div class="input-field">
+            <label for="">Correo electronico Personal</label>
+            <input type="email" name="email" id="email" required>
+          </div>
+        </div>
+        <div class="right">
+          <div class="input-field">
+            <label for="correoinstitucional">Correo Institucional</label>
+            <input type="email" name="correoinstitucional" id="correoinstitucional" required>
+          </div>
+          <div class="input-field">
+            <label for="correoinstitucional">Cargo en la univsersidad</label>
+            <input type="text" name="cargo" id="cargo" required>
+          </div>
+        </div>
+      </div>
+    </form>
+  </main>
+  <script type="module" src="../../javascript/create-user.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendario</title>
+  <link rel="stylesheet" href="../../css/calendar.css">
+</head>
+<body>
+  <header>
+    <div>
+      <a href="../../html/docente/dashboard.html">Calendario</a>
+    </div>
+    <nav>
+      <ul>
+        <li id="notificaciones">Notificaciones</li>
+        <li><a href="../../html/docente/history-requests.html">Historial de solicitudes</a></li>
+        <li><a href="../../html/docente/calendar.html">Calendario</a></li>
+        <li><a href="../../index.html">Cerrar sesion</a></li>
+        <li><button onclick="crearSolicitud()">Crear solicitud</button></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+   <div class="first">
+    <div class="cal-container">
+      <h3>Enero 2023</h3>
+      <ol>
+        <li class="day-name">Lun</li>
+        <li class="day-name">Mar</li>
+        <li class="day-name">Mier</li>
+        <li class="day-name">Jue</li>
+        <li class="day-name">Vie</li>
+        <li class="day-name">Sab</li>
+        <li class="day-name">Dom</li>
+        <li id="first-day">1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+        <li>11</li>
+        <li>12</li>
+        <li>13</li>
+        <li>14</li>
+        <li>15</li>
+        <li>16</li>
+        <li>17</li>
+        <li>18</li>
+        <li>19</li>
+        <li>20</li>
+        <li>21</li>
+        <li>22</li>
+        <li>23</li>
+        <li>24</li>
+        <li>25</li>
+        <li>26</li>
+        <li>27</li>
+        <li>28</li>
+        <li>29</li>
+        <li>30</li>
+        <li>31</li>
+      </ol>
+    </div>
+   </div>
+    <div class="event-list">
+      <h3>Proximos eventos</h3>
+      <div class="list-container">
+        <div class="card">
+          <div>
+            <div class="cicle-container">
+              <div class="circle"></div>
+            </div>
+          </div>
+          <div>Evento 1</div>
+          <div>Descipocion evento 1</div>
+          <div>Fecha precisa evento, lugar, otra desciopcion</div>
+        </div>
+        <div class="card">
+          <div>
+            <div class="cicle-container">
+              <div class="circle"></div>
+            </div>
+          </div>
+          <div>Evento 2</div>
+          <div>Descipocion evento 2</div>
+          <div>Fecha precisa evento, lugar, otra desciopcion</div>
+        </div>
+        <div class="card">
+          <div>
+            <div class="cicle-container">
+              <div class="circle"></div>
+            </div>
+          </div>
+          <div>Evento 3</div>
+          <div>Descipocion evento 3</div>
+          <div>Fecha precisa evento, lugar, otra desciopcion</div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script type="module" src="../../javascript/dashboard-docente.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+ 
+  <script>
+    function crearSolicitud() {
+      window.location.href = "./create-request.html";
+    }
+  </script>
+</body>
+</html>

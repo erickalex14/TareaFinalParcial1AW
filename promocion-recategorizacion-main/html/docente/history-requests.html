@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Historial de solicitudes</title>
+  <link rel="stylesheet" href="../../css/docente-history-requests.css">
+</head>
+<body>
+  <header>
+    <div>
+      <a href="../../html/docente/dashboard.html">Historial de solicitudes</a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="../../html/docente/dashboard.html">Regresar</a></li>
+        <li><button>Crear solicitud</button></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>Historial de solicitudes</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>nombre solicitud</th>
+          <th>tipo solicitud</th>
+          <th>Fecha emision</th>
+          <th>Asunto solicitud</th>
+          <th>Estado solicitud</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Solicitud 1</td>
+          <td>Promocion</td>
+          <td>2023-05-12</td>
+          <td>Hacer promocion de algo</td>
+          <td><span class="cuadro">Aprobado</span></td>
+        </tr>
+        <tr>
+          <td>Solicitud 2</td>
+          <td>Promocion</td>
+          <td>2023-05-12</td>
+          <td>Hacer promocion de algo</td>
+          <td><span class="cuadro-red">Reclazado</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+</body>
+</html>

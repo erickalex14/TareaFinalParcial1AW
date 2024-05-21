@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabla Solicitudes</title>
+  <link rel="stylesheet" href="/css/table-requests.css">
+</head>
+<body>
+  <header>
+    <div>
+      <a href="/html/miembro/table-requests.html">Lista de solicitudes</a>
+    </div>
+    <nav>
+      <ul>
+        <li>Usuario Miembro Comite</li>
+        <li>{Nombre Miembro}</li>
+        <li><a href="/index.html">Cerrar Sesion</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>Lista de solicitudes</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>ID solicitud</th>
+          <th>Nombre de solicitud</th>
+          <th>Tipo de solicitud</th>
+          <th>Remitente</th>
+          <th>Email</th>
+          <th>Fecha Emision</th>
+          <th>Asunto</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Recategorizaion para clases de GABD</td>
+          <td>Recategorizaion</td>
+          <td>Test_1</td>
+          <td>test@test3.com</td>
+          <td>15-05-2023</td>
+          <td>ecategorizaion para clases de GABD</td>
+          <td><button id="revisar">Revisar</button> <button class="button-red" id="rechazar">Rechazar</button></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Promocion para clases de GABD</td>
+          <td>Promocion</td>
+          <td>Test </td>
+          <td>test@test3.com</td>
+          <td>05-03-2023</td>
+          <td>Promocion para clases de GABD</td>
+          <td><button id="revisar">Revisar</button> <button class="button-red" id="rechazar">Rechazar</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+  <script type="module" src="/javascript/table-requests.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</body>
+</html>
